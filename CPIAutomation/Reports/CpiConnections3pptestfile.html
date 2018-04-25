@@ -1,0 +1,15 @@
+<html><head><title>Test Report</title></head><style>table {border-collapse:collapse;width:270px;}table td {border=2 2px #fab; max-width:590px; word-wrap:break-word;}</style><script src="http://code.jquery.com/jquery-latest.js"></script><script src="jquery.easyPaginate.js"></script><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);function drawChart() {var data = google.visualization.arrayToDataTable([['Status', 'Percentage'],
+          ['Passed',     0],
+          ['Failed',      4]]);
+
+        var options = {
+          title: 'Test Result'
+        };var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);} </script>
+  </head>
+  <body>
+<br><br><font size="4" color="blue">Feed File:/Users/skaliyaperumal/Projects/CPI/QA/17April2018/KG/kgconnection_20180412T165806/awesomenesstv_ent_shortlisted.json</font><br><br><font size="4" color="blue">Records in File:0</font><br><font size="4" color="blue">Records in DB:0</font><center><div id=piechart style="width: 900px; height: 400px;"></div></center><tr><td>Test Failure Summary</td></tr><table border=1 bordercolor=000000><tr><td><b>Primary Id</b></td><td><b>Expected</b></td><td><b>Actual</b></td><td><b>Status</b></td></tr><tr><td>fcbbe50554621cfa7257690d99127aa0:comedycentral:fcbbe50554621cfa7257690d99127aa0policy decision</td><td>Expectedpolicy decision:policy decision is missing[ policy decision<#>100, same sex marriage<#>100, policy decision<#>45, book tour<#>43, 196558<#>67, 710768<#>58, 100619<#>58, 240593<#>50, 18129502<#>47]</td><td>Actualpolicy decision:[ policy decision<#>100, 100619<#>58, 18129502<#>47, 196558<#>67, 240593<#>49, 710768<#>58, book tour<#>43, same sex marriage<#>100]</td><td>Status:false</td></tr><tr><td>3fee478425b095cbf83c8f68f87f201f:vice:3fee478425b095cbf83c8f68f87f201fdeportation </td><td>Expecteddeportation :deportation  is missing[illegal immigrant<#>100, documentation<#>100, deportation <#>100]</td><td>Actualdeportation :[benefit concert<#>100, deportation<#>22, documentation<#>100, doris<#>68, fines<#>21, illegal immigrant<#>100, vice impact spotlight<#>100]</td><td>Status:false</td></tr><tr><td>4e9fc18ff3919cc977e63e3c6d85fa2a:vice:4e9fc18ff3919cc977e63e3c6d85fa2a271707</td><td>Expected:271707 score mismatch.Expected:58</td><td>Actual:49</td><td>Status:false</td></tr><tr><td>1f5ce472f3d999c4413ca692a7021f62:vice:1f5ce472f3d999c4413ca692a7021f62homophobia </td><td>Expectedhomophobia :homophobia  is missing[homophobia <#>100, chechnya<#>100, russia<#>100]</td><td>Actualhomophobia :[chechnya<#>100, homophobia<#>32, ian daniel<#>61, lgbtq<#>37, russia<#>100, vice meets<#>100, viceland<#>100]</td><td>Status:false</td></tr></table>  </body>
+</html>

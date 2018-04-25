@@ -1,0 +1,15 @@
+<html><head><title>Test Report</title></head><style>table {border-collapse:collapse;width:270px;}table td {border=2 2px #fab; max-width:590px; word-wrap:break-word;}</style><script src="http://code.jquery.com/jquery-latest.js"></script><script src="jquery.easyPaginate.js"></script><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);function drawChart() {var data = google.visualization.arrayToDataTable([['Status', 'Percentage'],
+          ['Passed',     0],
+          ['Failed',      0]]);
+
+        var options = {
+          title: 'Test Result'
+        };var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);} </script>
+  </head>
+  <body>
+<br><br><font size="4" color="blue">Feed File:/Users/skaliyaperumal/Projects/CPI/QA/17April2018/CRAWL/all_data_20180412T165804/awesomenesstv_pop.data</font><br><br><font size="4" color="blue">Records in File:0</font><br><font size="4" color="blue">Records in DB:17464</font><center><div id=piechart style="width: 900px; height: 400px;"></div></center><tr><td>Test Failure Summary</td></tr><table border=1 bordercolor=000000><tr><td><b>Primary Id</b></td><td><b>Expected</b></td><td><b>Actual</b></td><td><b>Status</b></td></tr></table>  </body>
+</html>
